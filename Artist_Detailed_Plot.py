@@ -65,6 +65,8 @@ st.title("Artist Contribution Analysis")
 # Input field to ask the user for the directory path
 # Input for the directory path
 directory_path = st.text_input("Enter the directory path where the data is located")
+# Convert the directory path to a raw string
+raw_directory_path = directory_path.encode('unicode_escape').decode()
 
 # Add a button to initiate the process
 if st.button("Process"):
