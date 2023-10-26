@@ -80,7 +80,7 @@ if st.button("Process"):
 
 # Check if a directory path is provided
 if directory_path:
-    Top_Content_Artist, Top_Million_Artist = load_and_process_data(directory_path)
+    Top_Content_Artist, Top_Million_Artist = load_and_process_data(raw_directory_path)
 
     # Selectbox to choose between Top_Content_Artist and Top_Million_Artist
     selected_dataframe = st.selectbox("Select a DataFrame:", [None, "Top_Content_Artist", "Top_Million_Artist"])
